@@ -1,0 +1,16 @@
+{% extends "layout.html" %} {% block content %}
+<div class="result_list">
+  <p>
+    If you liked ' {{ first }} ' <br />
+    you are going to love these !!
+  </p>
+</div>
+<br />
+
+<div class="results">
+  {% if prediction %} {% for items in prediction[:10]%}
+  <h4>{{ items }}</h4>
+  {% endfor%} {% endif %}
+</div>
+
+{% endblock %}

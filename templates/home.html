@@ -1,0 +1,28 @@
+{% extends "layout.html" %} {% block content %}
+<div class="form1">
+  <div class="container">
+    <div class="row">
+      <form action="{{ url_for('predict') }}" method="POST">
+        <h4>Enter Your Movie Here</h4>
+        <!-- <input type="text" name="comment"/> -->
+        <br />
+        <!--textarea name="comment" rows="2" cols="20"></textarea> -->
+        <div class="form-group">
+          <input
+            type="text"
+            name="catch"
+            class="form-control form-control-lg"
+            id="movie-name"
+            placeholder="Movie name here"
+          />
+          <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
+        </div>
+        <!--<input type="submit" class="btn-info" value="predict">-->
+        <button type="submit" value="predict" class="btn btn-warning">
+          Predict
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock%}
