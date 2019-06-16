@@ -1,4 +1,11 @@
 {% extends "layout.html" %} {% block content %}
+<main role="main">
+  <div class="row">
+    <br />
+    <h2>Movie Recommender System</h2>
+  </div>
+  <br />
+</main>
 <div class="form1">
   <div class="container">
     <div class="row">
@@ -12,13 +19,29 @@
             type="text"
             name="catch"
             class="form-control form-control-lg"
-            id="movie-name"
+            id="search-input"
             placeholder="Movie name here"
           />
-          <img onclick="startDictation()" src="//i.imgur.com/cHidSVu.gif" />
+          <br />
+          <br />
+          <!-- SPEECH RECOGNITION -->
+          <div id="search-speech" style="display:none">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/70/Circle-icons-mic.svg"
+              height="50"
+              width="50"
+              onclick="speech.start()"
+              id="search-on"
+            />
+          </div>
         </div>
-        <!--<input type="submit" class="btn-info" value="predict">-->
-        <button type="submit" value="predict" class="btn btn-warning">
+
+        <button
+          type="submit"
+          id="search-go"
+          value="predict"
+          class="btn btn-warning"
+        >
           Predict
         </button>
       </form>
