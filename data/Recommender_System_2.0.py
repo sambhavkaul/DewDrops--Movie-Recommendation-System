@@ -76,7 +76,4 @@ def recommendations(title, cosine_sim = cosine_sim):
         recommended_movies.append(list(df.index)[i])
         
     return recommended_movies
-liked_movie="Inception"
-
-print(recommendations(liked_movie))
 
