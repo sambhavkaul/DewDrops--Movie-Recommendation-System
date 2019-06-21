@@ -1,13 +1,12 @@
 {% extends "layout.html" %} {% block content %}
-<main role="main">
-  <div class="row">
-    <br />
-    <h2>Movie Recommendation System</h2>
-  </div>
-  <br />
-</main>
+
 <div class="form1">
   <div class="container">
+    <div class="row">
+      <br />
+      <h2>Movie Recommendation System</h2>
+    </div>
+    <br />
     <div class="row">
       <form action="{{ url_for('predict') }}" method="POST">
         <h4>Enter Your Movie Here</h4>

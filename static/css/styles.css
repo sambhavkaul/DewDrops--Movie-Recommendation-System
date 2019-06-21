@@ -41,8 +41,9 @@ body {
 
   h2 {
     color: white;
-    margin-left: 190px;
+    margin-left: 140px;
     font-size: 50px;
+    margin-top: 200px;
   }
 
   h3 {
@@ -113,9 +114,8 @@ body {
 
   h2 {
     color: white;
-    margin-left: 520px;
+    margin-left: 110px;
     font-size: 60px;
-    padding-top: 200px;
   }
 
   h3 {
