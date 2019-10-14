@@ -1,0 +1,3 @@
+Welcome to DewDrops.
+
+This is a movie recommendation system that based on your favourite movie returns 10 recommendations for you. It uses the concept of cosine similarity to find matches and returns your recommendations on a webpage. Javascript and its library Flask were used to create the webpage and link the Machine Learning model. The model was created using python and its libraries. This project was created by students of UIET, Panjab University.
